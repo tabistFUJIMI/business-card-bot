@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>佐野 弘明 | Tabistゆ縁の宿ふじみ</title>
+  <meta name="description" content="佐野弘明 - ふじみ企業有限会社 専務取締役 / Tabistゆ縁の宿ふじみ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      font-family: "Noto Sans JP", sans-serif;
+      color: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+    }
+
+    /* ヘッダー */
+    .header {
+      text-align: center;
+      padding: 2rem 1.5rem 1.5rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px 20px 0 0;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: none;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #e94560, #533483);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      margin: 0 auto 1rem;
+      box-shadow: 0 4px 20px rgba(233, 69, 96, 0.3);
+    }
+
+    .name-ja {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.2rem;
+    }
+
+    .name-en {
+      font-size: 0.85rem;
+      color: #8888aa;
+      margin-bottom: 0.8rem;
+    }
+
+    .title {
+      font-size: 0.8rem;
+      color: #aaaacc;
+      line-height: 1.6;
+    }
+
+    .company {
+      font-weight: 500;
+      color: #ccccee;
+    }
+
+    .catchphrase {
+      margin-top: 0.8rem;
+      font-size: 0.85rem;
+      color: #e94560;
+      font-weight: 500;
+    }
+
+    /* リンク一覧 */
+    .links {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-top: none;
+      border-bottom: none;
+      padding: 0.5rem 1.5rem;
+    }
+
+    .link-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      text-decoration: none;
+      color: #e0e0e0;
+      transition: all 0.2s;
+    }
+
+    .link-item:last-child {
+      border-bottom: none;
+    }
+
+    .link-item:hover {
+      color: #ffffff;
+      transform: translateX(4px);
+    }
+
+    .link-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .link-icon.website { background: linear-gradient(135deg, #0f3460, #16213e); }
+    .link-icon.instagram { background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+    .link-icon.instagram-inn { background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); }
+    .link-icon.line { background: #06c755; }
+    .link-icon.phone { background: linear-gradient(135deg, #2ecc71, #27ae60); }
+    .link-icon.email { background: linear-gradient(135deg, #3498db, #2980b9); }
+    .link-icon.map { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+
+    .link-text {
+      flex: 1;
+    }
+
+    .link-label {
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .link-desc {
+      font-size: 0.75rem;
+      color: #8888aa;
+      margin-top: 0.15rem;
+    }
+
+    .link-arrow {
+      color: #555577;
+      font-size: 0.9rem;
+    }
+
+    /* フッター */
+    .footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 0 0 20px 20px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .address {
+      font-size: 0.8rem;
+      color: #8888aa;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="avatar">🏨</div>
+      <div class="name-ja">佐野 弘明</div>
+      <div class="name-en">Hiroaki Sano</div>
+      <div class="title">
+        <span class="company">ふじみ企業有限会社</span><br>
+        専務取締役
+      </div>
+      <div class="catchphrase">"ご縁を結ぶお宿"</div>
+    </div>
+
+    <div class="links">
+      <a href="https://www.fujimi-ryokan.com/" target="_blank" rel="noopener" class="link-item">
+        <div class="link-icon website">🏨</div>
+        <div class="link-text">
+          <div class="link-label">宿のサイト</div>
+          <div class="link-desc">Tabistゆ縁の宿ふじみ</div>
+        </div>
+        <span class="link-arrow">&#8250;</span>
+      </a>
+
+      <a href="https://www.instagram.com/highlow.chick/" target="_blank" rel="noopener" class="link-item">
+        <div class="link-icon instagram">📷</div>
+        <div class="link-text">
+          <div class="link-label">Instagram（個人）</div>
+          <div class="link-desc">@highlow.chick</div>
+        </div>
+        <span class="link-arrow">&#8250;</span>
+      </a>
+
+      <a href="https://www.instagram.com/tabist_fujimi/" target="_blank" rel="noopener" class="link-item">
+        <div class="link-icon instagram-inn">📷</div>
+        <div class="link-text">
+          <div class="link-label">Instagram（宿）</div>
+          <div class="link-desc">@tabist_fujimi</div>
+        </div>
+        <span class="link-arrow">&#8250;</span>
+      </a>
+
+      <a href="https://line.me/ti/p/Nfq9Waj18R" target="_blank" rel="noopener" class="link-item">
+        <div class="link-icon line">💬</div>
+        <div class="link-text">
+          <div class="link-label">LINE チャット</div>
+          <div class="link-desc">お気軽にどうぞ</div>
+        </div>
+        <span class="link-arrow">&#8250;</span>
+      </a>
+
+      <a href="tel:090-5632-7541" class="link-item">
+        <div class="link-icon phone">📞</div>
+        <div class="link-text">
+          <div class="link-label">電話</div>
+          <div class="link-desc">090-5632-7541</div>
+        </div>
+        <span class="link-arrow">&#8250;</span>
+      </a>
+
+      <a href="mailto:tabist.fujimi.16@gmail.com" class="link-item">
+        <div class="link-icon email">✉️</div>
+        <div class="link-text">
+          <div class="link-label">メール</div>
+          <div class="link-desc">tabist.fujimi.16@gmail.com</div>
+        </div>
+        <span class="link-arrow">&#8250;</span>
+      </a>
+
+      <a href="https://www.google.com/maps/search/?api=1&query=静岡県富士市荒田島町3-20" target="_blank" rel="noopener" class="link-item">
+        <div class="link-icon map">📍</div>
+        <div class="link-text">
+          <div class="link-label">Google Maps</div>
+          <div class="link-desc">静岡県富士市荒田島町3-20</div>
+        </div>
+        <span class="link-arrow">&#8250;</span>
+      </a>
+    </div>
+
+    <div class="footer">
+      <div class="address">
+        〒416-0912 静岡県富士市荒田島町3-20<br>
+        Tabistゆ縁の宿ふじみ
+      </div>
+    </div>
+  </div>
+</body>
+</html>
